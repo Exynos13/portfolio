@@ -43,6 +43,18 @@ const NavLinks = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 2.3, duration: 0.5, type: "spring" }}
         >
+
+          {/* Resume link */}
+          <NavLink to="/resume" onClick={() => setIsMenuOpen(false)}>
+            Resume
+          </NavLink>
+        </motion.div>
+
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 2.2, duration: 0.5, type: "spring" }}
+        >
           {/* Portfolio link */}
           <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
             Portfolio
@@ -54,6 +66,19 @@ const NavLinks = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 2.2, duration: 0.5, type: "spring" }}
         >
+
+          {/* Aboutme link */}
+          <NavLink to="/AboutMe" onClick={() => setIsMenuOpen(false)}>
+            AboutMe
+          </NavLink>
+        </motion.div>
+
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 2.2, duration: 0.5, type: "spring" }}
+        >
+
           {/* Contact link */}
           <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
             Contact

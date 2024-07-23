@@ -87,9 +87,16 @@ const ProjectDetails = () => {
                 <a href={project.github}>
                   <Button name="View Code" />
                 </a>
+                {project.deployed && (
                 <a href={project.deployed}>
-                  <Button name="View Site" />
+                  <Button name="Visit Site" />
                 </a>
+              )}
+                {project.Rpubs && (
+                <a href={project.Rpubs}>
+                  <Button name="View Visualization" />
+                </a>
+              )}
                 <Link to="/portfolio">
                   <Button name="Go Back" color="var(--hl2-color)" />
                 </Link>

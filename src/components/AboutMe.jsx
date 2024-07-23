@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { NavLink } from "react-router-dom";
@@ -38,13 +39,13 @@ const AboutMe = ({ name }) => {
   };
 
   return (
-    <section className="about">
-      <div className="aboutContainer container">
+    <section className="about"  >
+      <div className="aboutContainer container" style={{ maxWidth: '3000px', padding: '10px' }}>
         <div className="row">
           <motion.div
-            className="personalImage col-12 col-lg-6"
-            ref={ref}
-            initial={{ x: "-10vw", opacity: 0, scale: 0.5 }}
+            className="personalImage col-1 col-lg-6"
+            ref={ref} 
+            initial={{ x: "-10vw", opacity: 0, scale: 0.5 }} 
             animate={inView ? { x: 0, opacity: 1, scale: 1 } : { x: "-10vw", opacity: 0, scale: 0.5 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
             whileHover={{ scale: 1.05 }}
@@ -56,7 +57,7 @@ const AboutMe = ({ name }) => {
             <motion.div className="contentContainer" variants={staggerVariants}>
               {/* Display greeting and job title with animation */}
               <motion.h4 variants={paragraphVariants}>Nice to meet you! 👋🏻</motion.h4>
-              <motion.h5 variants={paragraphVariants}>I'm a Software Engineer at COMPANY.</motion.h5>
+              <motion.h5 variants={paragraphVariants}>An enthusiastic Data Science Professional</motion.h5>
 
               {/* Display content description with animation */}
               <motion.div
@@ -67,30 +68,48 @@ const AboutMe = ({ name }) => {
               >
                 {/* Paragraphs with animation */}
                 <motion.p variants={paragraphVariants}>
-                  Today, I find myself knee-deep in an exhilarating chapter of my journey as a POSITION at the tech
-                  titan, <span style={{ color: "var(--hl-color)" }}> COMPANY</span>. My playground? The captivating
-                  universe of <span style={{ color: "var(--hl-color)" }}> DEPARTMENT</span>.
+                  I’m a Data Scientist with a degree with distinction in <span style={{ color: "var(--hl-color)" }}> Master's of Data Science</span> from <span style={{ color: "var(--hl-color)" }}> RMIT University</span>. My journey into Data Science was driven by a strong passion for generating insights and storytelling through data. 
+                </motion.p>
+                <br />
+
+                <motion.p variants={paragraphVariants}>
+                Through this course, I can say am a <span style={{ color: "var(--hl-color)" }}>proud data enthusiast</span> with a strong foundation in coding, data visualization, statistical analysis, and machine learning. I improved my abilities through various tools and techniques(Power BI, Tableau) for extracting meaningful insights from data and making <span style={{ color: "var(--hl-color)" }}>data-driven decisions</span>.
+                </motion.p>
+                <br />  
+
+                <motion.p variants={paragraphVariants}>
+                During my undergraduate years, my enthusiasm for coding led me to learn multiple programming languages, ultimately earning a <span style={{ color: "var(--hl-color)" }}>Bachelor's degree in Computer Engineering</span>. This experience deepened my coding skills and introduced me to Python. My curiosity drove me to explore online courses in machine learning, culminating in a final year project where I developed a plant detection model and integrated it with an automated car.
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Here, I don my <span style={{ color: "var(--hl-color)" }}> problem-solving </span>
-                  cape and dive headfirst into real-world challenges, all while relentlessly pursuing a{" "}
-                  <span style={{ color: "var(--hl-color)" }}> DEGREE NAME</span> degree from the UNIVERSITY. So here I
-                  am, juggling bits of binary and real-life conundrums, all while crafting my own success story.
+                My first professional experience with data was as an SAP consultant at Larsen & Toubro Infotech, focusing on system monitoring. There, I realized how data could be transformed into actionable insights for monthly <span style={{ color: "var(--hl-color)" }}>analytical reports</span>, enhancing system landscape tracking and meeting SLA contracts.
+                </motion.p>
+                <br /> 
+
+                
+                <motion.p variants={paragraphVariants}>
+                As a graduate data scientist with AMW Tech, I gained <span style={{ color: "var(--hl-color)" }}>hands-on experience with data</span> by developing an ethical audience generator for various social media platforms. I learned to navigate APIs from different social media sites, understanding the complexities and restrictions of data collection. Preprocessing this live data was essential before using transformers to harness the power of <span style={{ color: "var(--hl-color)" }}>NLP</span> for analyzing social media sentiment.
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Life is a kaleidoscope of experiences, far beyond the confines of work. When code isn't my focus, I'm
-                  conquering HOBBY, HOBBY, and fueling my love for HOBBY.
+                My education and practical experience have equipped me with the essential skills to transform data into actionable insights.
                 </motion.p>
+                <br />
+                <motion.p variants={paragraphVariants}>
+                My goal is to leverage the power of data to enhance actionable decisions.
+                </motion.p>
+                <br />
+
+
               </motion.div>
+               
 
               {/* Button to view the portfolio */}
               <NavLink to="/portfolio">
                 <Button name="View Portfolio" />
               </NavLink>
             </motion.div>
-          </div>
+          </div> 
         </div>
       </div>
     </section>

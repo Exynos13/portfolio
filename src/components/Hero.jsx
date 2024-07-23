@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import landingImage from "../images/suit.png";
+import landingImage from "../images/banner.avif";
 import SocialIcons from "./SocialIcons";
 
 /**
@@ -37,6 +37,12 @@ const Hero = ({ name }) => {
       marginTop: "-100px",
       paddingBottom: "28px",
     },
+
+    quote: {
+      fontStyle: 'italic',
+      marginTop: '10px', // Adjusted margin
+      marginBottom: '20px', // Added margin
+    },
   };
   return (
     <>
@@ -65,10 +71,14 @@ const Hero = ({ name }) => {
               cursor: "",
             }}
             onInit={(typewriter) => {
-              typewriter.changeDelay(50).typeString("Software Engineer").start();
+              typewriter.changeDelay(50).typeString("Data Science Professional").start();
             }}
           />
         </motion.div>
+        {/* Non-animated Quote */}
+        <div className="quote" style={styles.quote}>
+          "Without data, you’re just another person with an opinion." — W. Edwards Deming
+        </div>
       </div>
       {/* Animated landing image */}
       <div className="image-container">
@@ -79,7 +89,7 @@ const Hero = ({ name }) => {
           transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
           style={styles.landingImage}
           src={landingImage}
-          alt="Michael Yeates"
+          alt="Alex Thomas"
         />
       </div>
       {/* Displaying social icons */}

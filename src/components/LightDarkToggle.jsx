@@ -35,9 +35,9 @@ const LightDarkToggle = () => {
     const colors = !islightMode
       ? {
           // Light Colors
-          "--bg-color": "#131a22",
+          "--bg-color": "#1a2421",
           "--bg2-color": "#232f3e19",
-          "--hl-color": "#48a3c6",
+          "--hl-color": "#016930",
           "--hl2-color": "#ea5b5c",
           "--text-color": "#f3f3f3",
           "--secondary-text-color": "#999999",
@@ -47,7 +47,7 @@ const LightDarkToggle = () => {
           // Dark Colors
           "--bg-color": "#101010",
           "--bg2-color": "#121212",
-          "--hl-color": "#48a3c6",
+          "--hl-color": "#016930",
           "--hl2-color": "#ea5b5c",
           "--text-color": "#f3f3f3",
           "--secondary-text-color": "#9f9f9f",

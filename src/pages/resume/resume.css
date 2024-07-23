@@ -14,3 +14,27 @@
   margin: var(--sm-spacing);
   text-align: center;
 }
+
+.full-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  margin-top: 20px; /* Adjust as needed */
+  
+}
+
+.button-gap {
+  width: 400px; /* Adjust the gap width as needed */
+}
+
+.button-row .btn:hover {
+  background-color: #ea5b5c !important; /* Use !important to ensure the style is applied */
+  color: #fff !important;
+}

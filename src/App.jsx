@@ -9,6 +9,7 @@ import Portfolio from "./pages/portfolio/Portfolio";
 import ProjectDetails from "./pages/portfolio/[project]/ProjectDetails";
 import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
+import AboutMe from "./components/AboutMe";
 import PageNotFound from "./pages/404/PageNotFound";
 
 /**
@@ -37,11 +38,11 @@ import PageNotFound from "./pages/404/PageNotFound";
 function App() {
   // Personal details for the user
   const personalDetails = {
-    name: "Michael Yeates",
-    location: "United Kingdom",
-    email: "michael-yeates@outlook.com",
+    name: "Alex Thomas",
+    location: "Melbourne",
+    email: "alexpeterthomas@gmail.com",
     brand:
-      "My unique blend of technical expertise, creative thinking, and background in psychology allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centred digital products.",
+      "My unique blend of Analytical thinking, innovation and consulting experience leads me to create the most effective recipes for leveraging data to drive actionable insights and impactful decisions.",
   };
 
   const location = useLocation();
@@ -90,6 +91,7 @@ function App() {
             <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume brand={personalDetails.brand} />} />
+            <Route path="/AboutMe" element={<AboutMe brand={personalDetails.brand} />} />
 
             <Route
               path="/contact"

@@ -1,5 +1,4 @@
 import PageHeader from "../../components/PageHeader";
-import Form from "../../components/Form";
 import ContactInfo from "../../components/ContactInfo";
 import Footer from "../../components/Footer";
 
@@ -25,7 +24,7 @@ const Contact = ({ name, email, location }) => {
           <div className="row">
             {/* Display the contact form */}
             <div className="col-12 col-lg-6">
-              <Form />
+
             </div>
 
             {/* Display the contact information */}

@@ -1,0 +1,15 @@
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--spacing);
+  overflow: hidden;
+}
+
+.AboutMe .personalImage {
+  margin-right: 200px; /* Adjust the margin to move the image to the left */
+}
+
+.AboutMe .personalInfo .contentDescription {
+  width: 100%; /* Increase width to fit more text per line */
+}
