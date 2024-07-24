@@ -1,7 +1,4 @@
 import { useState, useEffect } from "react";
-import { AiOutlineStar } from "react-icons/ai";
-import { BiGitRepoForked } from "react-icons/bi";
-import { motion } from "framer-motion";
 import SocialIcons from "./SocialIcons";
 
 /**
