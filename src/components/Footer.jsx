@@ -12,10 +12,10 @@ const Footer = () => {
   const currentYear = date.getFullYear();
 
   // State to hold GitHub information
-  const [gitHubInfo, setGitHubInfo] = useState({
-    stars: null,
-    forks: null,
-  });
+//  const [gitHubInfo, setGitHubInfo] = useState({
+//    stars: null,
+//    forks: null,
+//  });
 
   useEffect(() => {
     // Fetch GitHub repository information
@@ -32,14 +32,14 @@ const Footer = () => {
   }, []);
 
   // Variants for button animation
-  const buttonVariants = {
-    hover: {
-      scale: 1.05,
-    },
-    tap: {
-      scale: 1,
-    },
-  };
+//  const buttonVariants = {
+//    hover: {
+//      scale: 1.05,
+//    },
+//    tap: {
+//      scale: 1,
+//    },
+//  };
 
   return (
     <footer>
