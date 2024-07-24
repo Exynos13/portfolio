@@ -30,7 +30,7 @@ const ContactInfo = ({ name, email, location }) => {
     >
       <h4 className="contentTitle">Connect With Me</h4>
       <p className="infoDescription">
-        Looking to build connections and share perspectives with talented developers working to create positive change.
+        Looking to build connections, share perspectives and collaborate with like-minded professionals.
       </p>
       <ul className="listInfo">
         {/* Display Name */}
