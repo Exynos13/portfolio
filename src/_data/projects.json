@@ -27,7 +27,7 @@
     "title": "Tableau Projects",
     "description": "Tableau Dashboards",
     "image": "/projectImages/Dashboard.png",
-    "image2": "/projectImages/Tableau.jpeg",
+    "image2": "/projectImages/Tableau.png",
     "image3": "/projectImages/Dashboard1.png",
     "technologies": ["Data Preprocessing", "Data Analysis", "Reports", "Dashboards"],
     "body": "Some of my tableau projects where I have successfully created and managed Tableau workbooks to analyze and extract valuable insights from complex datasets. \n Constructed comprehensive dashboards by combining multiple visualizations, providing a cohesive and holistic view of the data. Designed user-friendly and interactive dashboards with elements like filters, highlighters, and action controls, enabling users to explore the data and drill down into specific details.",

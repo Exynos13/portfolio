@@ -69,7 +69,7 @@ const NavLinks = () => {
 
           {/* Aboutme link */}
           <NavLink to="/AboutMe" onClick={() => setIsMenuOpen(false)}>
-            AboutMe
+            About Me
           </NavLink>
         </motion.div>
 
