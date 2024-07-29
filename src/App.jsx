@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
-
-// Components
+import { Helmet } from "react-helmet";
 import Loader from "./pages/loader/loader";
 import Header from "./components/Header";
 import Landing from "./pages/landing/Landing";
@@ -12,31 +11,7 @@ import Contact from "./pages/contact/Contact";
 import AboutMe from "./components/AboutMe";
 import PageNotFound from "./pages/404/PageNotFound";
 
-/**
- * Instructions for Customizing the Portfolio
- * ------------------------------------------
- * 1. Adding Your Own Projects:
- *    - Navigate to the "_data" folder and modify the "projects.json" file to include your projects.
- *
- * 2. Replacing Project Images:
- *    - Access the "public/projectImages" directory to replace the my project images with your own.
- *
- * 3. Handling Form Submissions:
- *    - To receive form submissions, obtain an API Key. Refer to the Form component for detailed instructions.
- *
- * For Assistance or Questions:
- * -----------------------------
- * If you require assistance or have questions, don't hesitate to reach out via LinkedIn or email.
- *
- * Support and Star:
- * ------------------
- * Enjoying this project? Please consider giving it a star (🌟).
- * I'm committed to ongoing updates and feature additions.
- * Your suggestions and feedback are invaluable and highly encouraged!
- */
-
 function App() {
-  // Personal details for the user
   const personalDetails = {
     name: "Alex Thomas",
     location: "Melbourne",
@@ -47,23 +22,18 @@ function App() {
 
   const location = useLocation();
 
-  // State to manage loader visibility
   const [showLoader, setShowLoader] = useState(true);
-
   const [originalTitle, setOriginalTitle] = useState();
 
   useEffect(() => {
-    // Hide loader when initial route is loaded
     if (location.pathname !== "/") {
       setShowLoader(false);
     }
 
-    // Store the original document title
     if (!originalTitle) {
       setOriginalTitle(document.title);
     }
 
-    // Handle document title change when tab visibility changes
     const handleTabChange = () => {
       if (document.hidden) {
         document.title = "Alex Thomas";
@@ -72,40 +42,36 @@ function App() {
       }
     };
 
-    // Listen for visibility change events
     window.addEventListener("visibilitychange", handleTabChange);
     return () => window.removeEventListener("visibilitychange", handleTabChange);
   }, [location, originalTitle]);
 
   return (
     <>
+      <Helmet>
+        <meta property="og:title" content="Alex Thomas Portfolio" />
+        <meta property="og:description" content="Explore the portfolio of Alex Thomas, a data-driven consultant." />
+        <meta property="og:image" content="https://alexpeterthomas.xyz/projectImages/screenshot2.png" />
+        <meta property="og:url" content="https://alexpeterthomas.xyz" />
+        <meta property="og:type" content="website" />
+        <title>Alex Thomas Portfolio</title>
+      </Helmet>
       {showLoader ? (
-        // Show loader until initial route is loaded
         <Loader setShowLoader={setShowLoader} />
       ) : (
         <>
-          {/* Header */}
           <Header />
-          {/* Define routes */}
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume brand={personalDetails.brand} />} />
             <Route path="/AboutMe" element={<AboutMe brand={personalDetails.brand} />} />
-
             <Route
               path="/contact"
-              element={
-                <Contact
-                  name={personalDetails.name}
-                  location={personalDetails.location}
-                  email={personalDetails.email}
-                />
-              }
+              element={<Contact name={personalDetails.name} location={personalDetails.location} email={personalDetails.email} />}
             />
             <Route path="/page-not-found" element={<PageNotFound />} />
             <Route path="/portfolio/:projectTitle" element={<ProjectDetails />} />
-            {/* Fallback route for unknown paths */}
             <Route path="*" element={<Navigate to="/page-not-found" />} />
           </Routes>
         </>
