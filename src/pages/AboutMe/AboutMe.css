@@ -30,6 +30,8 @@
 
 .contentContainer {
   padding: 10px;
+  overflow-y: auto; /* Ensure content is scrollable */
+  max-height: 80vh; /* Limit max height for better mobile fit */
 }
 
 .contentContainer h4 {
