@@ -4,6 +4,7 @@
   font-size: 48px;
   letter-spacing: -3px;
 }
+
 .landing .description {
   font-size: 22px;
   letter-spacing: 1.5px;
@@ -18,6 +19,7 @@
   position: absolute;
   left: 50px;
   bottom: 20px;
+  justify-content: center;
 }
 
 /* --- MEDIA QUERIES --- */
@@ -38,5 +40,15 @@
 
   .landing .socialIcons {
     flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .landing .socialIcons {
+    position: static;
+    margin-top: 20px; /* Add margin to create space below the quote */
+    justify-content: center;
   }
 }
