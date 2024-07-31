@@ -1,169 +1,66 @@
-/* --- MOBILE STYLES --- */
-
-.contact {
+/* --- Common Styles --- */
+.resume {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--spacing);
   overflow: hidden;
+  margin-top: var(--spacing);
+  padding-bottom: var(--spacing);
 }
 
-.center-contact-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contentTitle {
+.brand {
+  font-size: 30px;
   color: var(--text-color);
-  padding-bottom: 10px;
+  padding: var(--spacing);
+  margin: var(--sm-spacing);
+  text-align: center;
 }
 
-.contactInfo {
-  font-size: 12px;
-  color: var(--secondary-text-color);
-  margin-bottom: var(--sm-spacing);
-  margin-left: -450px;
-}
-
-.contentDescription {
-  font-size: 15px;
-}
-
-.info {
-  font-size: 15px;
-}
-
-.infoDescription {
-  margin-bottom: var(--sm-spacing);
-}
-
-.personalContactInfo {
+.full-page {
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-ul {
-  list-style: none;
-}
-
-.mediaWrap {
-  border-left: 2px solid var(--grey);
-  padding-left: var(--sm-spacing);
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.formGroup {
-  padding-right: 15px;
-}
-
-.formControl {
-  font-size: 15px;
-  width: 100%;
-  padding: 10px 10px;
-  border: none;
-  background-color: var(--bg-color);
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--grey);
-  border-radius: 1px;
-  outline: transparent;
-  color: var(--grey);
-}
-
-.formControl:focus {
-  border-bottom: 1px solid var(--hl-color);
-}
-
-.formError {
-  border-bottom: 1px solid var(--hl2-color);
-}
-
-.formError::placeholder {
-  color: var(--hl2-color);
-}
-
-textarea {
-  resize: none;
-  height: auto;
-  font-family: "Poppins", sans-serif;
-}
-
-.icon {
-  color: var(--hl-color);
-  font-size: 28px;
-}
-
-.infoIcon {
-  width: var(--spacing);
+.button-row {
   display: flex;
-  align-items: center;
+  justify-content: space-between; /* Adjust as needed */
+  margin-top: 20px; /* Adjust as needed */
 }
 
-.infoType {
-  color: var(--text-color);
-  font-size: 15px;
+.button-gap {
+  width: 400px; /* Adjust the gap width as needed */
 }
 
-.infoValue a {
-  color: var(--hl-color);
+.button-row .btn:hover {
+  background-color: #ea5b5c !important; /* Use !important to ensure the style is applied */
+  color: #fff !important;
 }
 
-.contactForm {
-  margin-bottom: var(--sm-spacing);
-}
-
-.contact .socialIcons {
-  display: none;
-}
-
-.mediaWrap a:hover {
-  color: var(--hl2-color);
-}
-
-@media (min-width: 400px) {
-  .contactInfo {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 750px) {
-  .contact .socialIcons {
-    display: inline;
-    padding-bottom: var(--sm-spacing);
-  }
-
-  /* .contact .socialIcons::before,
-  .contact .socialIcons::after {
-    background-color: var(--grey);
-    content: "";
-    height: 2px;
-    width: var(--spacing);
-    display: inline-block;
-    margin-bottom: 7px;
-    margin-right: 10px;
-  } */
-}
-
-/* Mobile specific styles */
+/* --- Mobile Styles --- */
 @media (max-width: 750px) {
-  .contactInfo {
-    margin-left: 0; /* Reset margin for mobile */
-    text-align: left; /* Left-align text for mobile */
+  .brand {
+    font-size: 24px;
+    padding: var(--sm-spacing);
+    margin: var(--xs-spacing);
   }
 
-  .personalContactInfo {
-    justify-content: flex-start; /* Align items to the start */
-    flex-direction: row; /* Keep items in row */
-    width: 100%; /* Ensure full width */
+  .button-row {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+    gap: 10px; /* Add gap between buttons */
+    margin-top: 20px; /* Adjust as needed */
   }
 
-  .personalContactInfo .infoIcon {
-    margin-right: 10px; /* Add spacing between icon and text */
+  .button-gap {
+    width: 100%; /* Full width for better mobile view */
+    height: 10px; /* Height gap between buttons */
   }
 
-  .mediaWrap {
-    border-left: none;
-    padding-left: 0;
+  .button-row .btn {
+    width: 100%; /* Full width buttons */
+    max-width: 300px; /* Optional max width */
   }
 }
