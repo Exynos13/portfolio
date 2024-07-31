@@ -87,18 +87,9 @@ This is a Portfolio i created to showcase my skills as a data scientist. The web
   
   <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/mdyeates/my-portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/mdyeates/my-portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/mdyeates/my-portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/mdyeates/my-portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/mdyeates/my-portfolio.svg?style=for-the-badge
-[stars-url]: https://github.com/mdyeates/my-portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/mdyeates/my-portfolio.svg?style=for-the-badge
-[issues-url]: https://github.com/mdyeates/my-portfolio/issues
-[license-shield]: https://img.shields.io/github/license/mdyeates/my-portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/mdyeates/my-portfolio/blob/main/LICENSE.md
+
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/mdyeates
+[linkedin-url]: https://linkedin.com/in/alexpeterthomas
 
   <!-- UPDATE PLACEHOLDER IMAGES HERE -->
 
