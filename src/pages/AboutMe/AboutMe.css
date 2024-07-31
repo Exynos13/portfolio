@@ -13,3 +13,16 @@
 .AboutMe .personalInfo .contentDescription {
   width: 100%; /* Increase width to fit more text per line */
 }
+
+/* Media Queries for Mobile Optimization */
+
+@media (min-width: 750px) {
+  .AboutMe .personalImage {
+    margin-right: 200px; /* Original margin for larger screens */
+    margin-bottom: 0; /* Remove bottom margin for larger screens */
+  }
+
+  .AboutMe .personalInfo .contentDescription {
+    padding: 0; /* Remove padding for larger screens */
+  }
+}
