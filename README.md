@@ -25,31 +25,7 @@ Crafting Connections through Code: Explore my journey, projects, and passions in
     </p>
   </div>
   
-  <!-- TABLE OF CONTENTS -->
-
-  <details>
-    <summary>Table of Contents</summary>
-    <ol>
-      <li>
-        <a href="#about-the-project">About The Project</a>
-        <ul>
-          <li><a href="#photos">Photos</a></li>
-          <li><a href="#built-with">Built With</a></li>
-          <li><a href="#description">Description</a></li>
-        </ul>
-      </li>
-      <li>
-          <a href="#getting-started">Getting Started</a>
-        <ul>
-          <li><a href="#prerequisites">Prerequisites</a></li>
-          <li><a href="#installation">Installation</a></li>
-        </ul>
-      </li>
-      <li><a href="#license">License</a></li>
-      <li><a href="#questions">Questions</a></li>
-    </ol>
-  </details>
-  
+ 
   <!-- ABOUT THE PROJECT -->
   
   ## About The Project
