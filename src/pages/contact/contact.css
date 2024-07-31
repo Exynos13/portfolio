@@ -135,10 +135,10 @@ textarea {
 
   /* .contact .socialIcons::before,
   .contact .socialIcons::after {
-    background-color: var (--grey);
+    background-color: var(--grey);
     content: "";
     height: 2px;
-    width: var (--spacing);
+    width: var(--spacing);
     display: inline-block;
     margin-bottom: 7px;
     margin-right: 10px;
@@ -154,7 +154,12 @@ textarea {
 
   .personalContactInfo {
     justify-content: flex-start; /* Align items to the start */
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: row; /* Keep items in row */
+    width: 100%; /* Ensure full width */
+  }
+
+  .personalContactInfo .infoIcon {
+    margin-right: 10px; /* Add spacing between icon and text */
   }
 
   .mediaWrap {
