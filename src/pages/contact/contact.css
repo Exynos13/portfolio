@@ -149,11 +149,11 @@ textarea {
 @media (max-width: 750px) {
   .contactInfo {
     margin-left: 0; /* Reset margin for mobile */
-    text-align: center; /* Center text for mobile */
+    text-align: left; /* Left-align text for mobile */
   }
 
   .personalContactInfo {
-    justify-content: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the start */
     flex-direction: column; /* Stack items vertically */
   }
 
