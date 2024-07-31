@@ -7,11 +7,13 @@
   margin-top: var(--spacing);
   overflow: hidden;
 }
+
 .center-contact-info {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .contentTitle {
   color: var(--text-color);
   padding-bottom: 10px;
@@ -133,12 +135,30 @@ textarea {
 
   /* .contact .socialIcons::before,
   .contact .socialIcons::after {
-    background-color: var(--grey);
+    background-color: var (--grey);
     content: "";
     height: 2px;
-    width: var(--spacing);
+    width: var (--spacing);
     display: inline-block;
     margin-bottom: 7px;
     margin-right: 10px;
   } */
+}
+
+/* Mobile specific styles */
+@media (max-width: 750px) {
+  .contactInfo {
+    margin-left: 0; /* Reset margin for mobile */
+    text-align: center; /* Center text for mobile */
+  }
+
+  .personalContactInfo {
+    justify-content: center; /* Center items horizontally */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .mediaWrap {
+    border-left: none;
+    padding-left: 0;
+  }
 }
