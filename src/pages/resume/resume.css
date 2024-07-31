@@ -1,42 +1,78 @@
-/* --- MOBILE STYLES --- */
+/* --- BASE STYLES --- */
 
-.landing .name {
-  font-size: 48px;
-  letter-spacing: -3px;
-}
-.landing .description {
-  font-size: 22px;
-  letter-spacing: 1.5px;
-}
-
-.landingImage {
-  right: 0px;
-}
-
-.landing .socialIcons {
+.resume {
   display: flex;
-  position: absolute;
-  left: 50px;
-  bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin-top: var(--spacing);
+  padding-bottom: var(--spacing);
 }
 
-/* --- MEDIA QUERIES --- */
+.brand {
+  font-size: 30px;
+  color: var(--text-color);
+  padding: var(--spacing);
+  margin: var(--sm-spacing);
+  text-align: center;
+}
 
-@media (min-width: 750px) {
-  .landing .name {
-    font-size: 70px;
+.full-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.button-gap {
+  width: 400px; /* Adjust the gap width as needed */
+}
+
+.button-row .btn:hover {
+  background-color: #ea5b5c !important; /* Use !important to ensure the style is applied */
+  color: #fff !important;
+}
+
+/* --- MEDIA QUERIES FOR MOBILE --- */
+
+@media (max-width: 750px) {
+  .resume {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .landing .description {
-    font-size: 32px;
+  .brand {
+    font-size: 24px; /* Reduced font size for better fit on mobile */
+    padding: var(--sm-spacing);
+    margin: var(--xs-spacing);
   }
 
-  .landingImage {
-    bottom: 0;
-    right: 80px;
+  .full-page {
+    width: 100vw;
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Add padding for mobile view */
   }
 
-  .landing .socialIcons {
-    flex-direction: column;
+  .button-row {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center; /* Center align buttons */
+    margin-top: 10px; /* Adjust margin for spacing */
+  }
+
+  .button-gap {
+    width: auto; /* Adjust gap width for mobile view */
+    height: 20px; /* Add vertical spacing between buttons */
+  }
+
+  .button-row .btn {
+    width: 100%; /* Make buttons full width on mobile */
+    margin-bottom: 10px; /* Add margin for spacing */
   }
 }
