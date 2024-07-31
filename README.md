@@ -28,10 +28,6 @@ Crafting Connections through Code: Explore my journey, projects, and passions in
       <br/>
       <br/>
       <a href="https://www.alexpeterthomas.xyz">View Live Website</a>
-      ·
-      <a href="https://github.com/mdyeates/my-portfolio/issues">R Bug</a>
-      ·
-      <a href="https://github.com/mdyeates/my-portfolio/issues">Request Feature</a>
     </p>
   </div>
   
@@ -66,13 +62,13 @@ Crafting Connections through Code: Explore my journey, projects, and passions in
   
   ### Photos
   
-[![My React Portfolio Screen Shot][product-screenshot]](https://michaelyeates.co.uk)
+[![My React Portfolio Screen Shot][product-screenshot]](https://www.alexpeterthomas.xyz)
 
-[![My React Portfolio Screen Shot][product-screenshot2]](https://michaelyeates.co.uk)
+[![My React Portfolio Screen Shot][product-screenshot2]](https://www.alexpeterthomas.xyz)
 
-[![My React Portfolio Screen Shot][product-screenshot3]](https://michaelyeates.co.uk)
+[![My React Portfolio Screen Shot][product-screenshot3]](https://www.alexpeterthomas.xyz)
 
-[![My React Portfolio Screen Shot][product-screenshot4]](https://michaelyeates.co.uk)
+[![My React Portfolio Screen Shot][product-screenshot4]](https://www.alexpeterthomas.xyz)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
@@ -88,53 +84,6 @@ This is a Portfolio i created to showcase my skills as a data scientist. The web
 
   <p align="right"><a href="#readme-top">back to top</a></p>
 
-<!-- GETTING STARTED -->
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/mdyeates/my-portfolio.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-
-  <p align="right"><a href="#readme-top">back to top</a></p>
-  
- 
-  <!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE.md` for more information.
-
-  <p align="right"><a href="#readme-top">back to top</a></p>
-  
-  
-<!-- QUESTIONS -->
-  
-## Questions
-
-If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:michael-yeates@outlook.com">michael-yeates@outlook.com</a>
-
-<a href="https://www.linkedin.com/in/mdyeates/">LinkedIn</a> | <a href="https://github.com/mdyeates/">GitHub</a>
-
-Project Link: [https://github.com/mdyeates/my-portfolio](https://github.com/mdyeates/my-portfolio)
-
-  <p align="right"><a href="#readme-top">back to top</a></p>
   
   <!-- MARKDOWN LINKS & IMAGES -->
 

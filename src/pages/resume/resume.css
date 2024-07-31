@@ -1,66 +1,42 @@
-/* --- Common Styles --- */
-.resume {
+/* --- MOBILE STYLES --- */
+
+.landing .name {
+  font-size: 48px;
+  letter-spacing: -3px;
+}
+.landing .description {
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.landingImage {
+  right: 0px;
+}
+
+.landing .socialIcons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  margin-top: var(--spacing);
-  padding-bottom: var(--spacing);
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
 }
 
-.brand {
-  font-size: 30px;
-  color: var(--text-color);
-  padding: var(--spacing);
-  margin: var(--sm-spacing);
-  text-align: center;
-}
+/* --- MEDIA QUERIES --- */
 
-.full-page {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.button-row {
-  display: flex;
-  justify-content: space-between; /* Adjust as needed */
-  margin-top: 20px; /* Adjust as needed */
-}
-
-.button-gap {
-  width: 400px; /* Adjust the gap width as needed */
-}
-
-.button-row .btn:hover {
-  background-color: #ea5b5c !important; /* Use !important to ensure the style is applied */
-  color: #fff !important;
-}
-
-/* --- Mobile Styles --- */
-@media (max-width: 750px) {
-  .brand {
-    font-size: 24px;
-    padding: var(--sm-spacing);
-    margin: var(--xs-spacing);
+@media (min-width: 750px) {
+  .landing .name {
+    font-size: 70px;
   }
 
-  .button-row {
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center;
-    gap: 10px; /* Add gap between buttons */
-    margin-top: 20px; /* Adjust as needed */
+  .landing .description {
+    font-size: 32px;
   }
 
-  .button-gap {
-    width: 100%; /* Full width for better mobile view */
-    height: 10px; /* Height gap between buttons */
+  .landingImage {
+    bottom: 0;
+    right: 80px;
   }
 
-  .button-row .btn {
-    width: 100%; /* Full width buttons */
-    max-width: 300px; /* Optional max width */
+  .landing .socialIcons {
+    flex-direction: column;
   }
 }
